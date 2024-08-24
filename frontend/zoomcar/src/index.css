@@ -1,0 +1,99 @@
+.navbar{
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+  margin:0;
+  background-color: black;
+  color: aliceblue;
+  padding: 5px;
+}
+.navbar-item{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+}
+.login{
+  display: flex;
+  flex-direction: column;
+  outline: auto;
+  border: 1px solid black;
+  align-items:center;
+  background-color: rgb(247, 247, 247);
+  gap: 10px;;
+}.button{
+
+  padding: 10px 20px;
+  border: none;
+  background-color: blue;
+  color: white;
+  
+
+}:hover{
+  font-size:medium;
+}
+.register{
+  display: flex;
+  flex-direction: column;
+  outline: auto;
+  border: 1px solid black;
+  align-items:center;
+  background-color: rgb(250, 252, 252);
+  justify-content: center;
+  height: 400px;
+  gap: 10px;;
+}
+.home-page{
+  display: flex;
+  gap:100px;
+  
+  background-color: lightblue;
+}
+.filters{
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  background-color: lightgray;
+  padding: 20px;
+}
+.car-list{
+  display:flex;
+  flex-direction: row;
+  gap: 20px;
+  
+  padding: 20px;
+  flex-wrap: wrap;
+  
+}.car-item{
+  border: 1px solid black;
+  padding: 20px;
+  background-color: rgb(222, 212, 212);
+  height: 350px;;
+  width:auto;
+}
+.booking-details{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: rgb(244, 240, 240);
+  padding: 20px;
+  
+}
+
+.footer{
+  width: auto;
+  height:100px;
+  background-color: rgb(29, 27, 27);
+  margin:0;
+  padding: 10px;;
+}
+.booking-page{
+  width:auto;
+  height: 500px;
+  background-color: rgb(242, 243, 244);
+}
+.confirmation-page{
+    width: auto;
+    height: 550px;
+    background-color: rgb(242, 243, 244);
+}
