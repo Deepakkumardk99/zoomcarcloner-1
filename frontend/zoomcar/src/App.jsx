@@ -1,4 +1,4 @@
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route,Link } from 'react-router-dom';
 import Login from './components/Login';
 import Register from './components/Register';
 import HomePage from './components/HomePage';
@@ -12,7 +12,19 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
   return (
     <>
-      <NavBar />
+
+      <div>
+       <div>
+          <Link to='/'></Link>
+          <Link to='/register'> </Link>
+          <Link to='/home'> </Link>
+          <Link to='/booking/:carId'> </Link>
+          <Link to='/bookings/users'></Link>
+          <Link to='/confirmation'> </Link>
+          <Link to='/admin'></Link>
+
+        </div>
+       <NavBar />
       <Routes>
         <Route path="/" element={<Login />} />
         <Route path="/register" element={<Register />} />
@@ -25,6 +37,11 @@ function App() {
         
       </Routes>
       <Footer/>
+
+
+
+      </div>
+      
     </>
   );
 }
