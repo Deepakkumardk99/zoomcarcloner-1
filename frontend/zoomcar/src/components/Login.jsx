@@ -45,8 +45,8 @@ const Login = () => {
         required
       />
       <button  className='button'type="submit">Login</button>
-      <p>
-        New here? <a href="/register">Register</a>
+      <p >
+        New here? <a style={{color:'blue'}} onClick={()=>navigate('/register')} >Register</a>
       </p>
     </form>
   );
