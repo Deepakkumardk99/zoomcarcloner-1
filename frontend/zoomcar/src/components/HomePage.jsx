@@ -141,7 +141,7 @@ const HomePage = () => {
           <div key={car._id} className="car-item">
             <img src={car.imageUrl} alt={car.name} />
             <h3>{car.name}</h3>
-            <p>Price: {car.price}</p>
+            <p>Price:${car.price}</p>
             <p>Rating: {car.rating}</p>
             <button onClick={() => handleBookNow(car)}>Book Now</button>
           </div>

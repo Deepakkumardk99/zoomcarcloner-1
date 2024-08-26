@@ -20,7 +20,9 @@
   border: 1px solid black;
   align-items:center;
   background-color: rgb(247, 247, 247);
-  gap: 10px;;
+  gap: 5px;
+  
+  padding: 10px;
 }.button{
 
   padding: 10px 20px;
@@ -29,8 +31,6 @@
   color: white;
   
 
-}:hover{
-  font-size:medium;
 }
 .register{
   display: flex;
@@ -47,7 +47,7 @@
   display: flex;
   gap:100px;
   
-  background-color: lightblue;
+  background-color: rgb(236, 239, 240);
 }
 .filters{
   display: flex;
@@ -68,7 +68,7 @@
   border: 1px solid black;
   padding: 20px;
   background-color: rgb(222, 212, 212);
-  height: 350px;;
+  height:385px;;
   width:auto;
 }
 .booking-details{
@@ -82,18 +82,18 @@
 
 .footer{
   width: auto;
-  height:100px;
+  height:auto;
   background-color: rgb(29, 27, 27);
   margin:0;
   padding: 10px;;
 }
 .booking-page{
   width:auto;
-  height: 500px;
+  padding: 10px;;
   background-color: rgb(242, 243, 244);
 }
 .confirmation-page{
     width: auto;
-    height: 550px;
+   padding: 10px;;
     background-color: rgb(242, 243, 244);
 }

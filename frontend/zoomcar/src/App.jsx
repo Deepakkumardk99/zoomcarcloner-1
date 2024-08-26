@@ -3,16 +3,16 @@ import Login from './components/Login';
 import Register from './components/Register';
 import HomePage from './components/HomePage';
 import BookingPage from './components/BookingPage';
-import Navbar from './components/Navbar';
+import NavBar from './components/Navbar';
 import BookingDetails from './components/BookingDetails';
 import ConfirmationPage from './components/ConfirmationPage';
 import AdminPage from './components/Adminpage'
 import { Footer } from './components/Footer';
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
   return (
     <>
-      <Navbar />
+      <NavBar />
       <Routes>
         <Route path="/" element={<Login />} />
         <Route path="/register" element={<Register />} />

@@ -28,7 +28,7 @@ const Login = () => {
     <form className="login" onSubmit={handleSubmit}
     >
          <h2>Login page</h2>
-       <h4>Enter the Email</h4>   
+       <h6>Enter the Email</h6>   
       <input
         type="email"
         placeholder="Email"
@@ -36,7 +36,7 @@ const Login = () => {
         onChange={(e) => setEmail(e.target.value)}
         required
           />
-          <h4>Enter the password</h4>
+          <h6>Enter the password</h6>
       <input
         type="password"
         placeholder="Password"
