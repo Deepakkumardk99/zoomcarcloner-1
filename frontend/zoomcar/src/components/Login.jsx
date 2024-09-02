@@ -16,6 +16,7 @@ const Login = () => {
         email,
         password,
       });
+      
       login(response.data);
       navigate('/home');
     } catch (error) {
