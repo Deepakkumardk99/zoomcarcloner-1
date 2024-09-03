@@ -37,7 +37,7 @@ const AdminPage = () => {
 
   const handleAddCar = async () => {
     try {
-      const response = await axios.post('http://localhost:5000/api/cars', newCar, {
+      const response = await axios.post(`${import.meta.env.VITE_API_BASE_URL}cars`, newCar, {
         headers: {
           Authorization: `Bearer ${user.token}`,
         },
@@ -54,7 +54,7 @@ const AdminPage = () => {
 
   const handleDeleteCar = async (id) => {
     try {
-      await axios.delete(`http://localhost:5000/api/cars/${id}`, {
+      await axios.delete(`${import.meta.env.VITE_API_BASE_URL}cars/${id}`, {
         headers: {
           Authorization: `Bearer ${user.token}`,
         },
