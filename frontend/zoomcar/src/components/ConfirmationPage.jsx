@@ -14,7 +14,7 @@ const ConfirmationPage = () => {
 
   const handleSaveBooking = async () => {
     try {
-      const response = await axios.post('http://localhost:5000/api/bookings', {
+      const response = await axios.post(`${import.meta.env.VITE_API_BASE_URL}bookings`, {
         carId: car._id,
         startDate,
         endDate,

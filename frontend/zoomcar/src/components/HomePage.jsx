@@ -25,7 +25,7 @@ const HomePage = () => {
           throw new Error('User is not authenticated');
         }
 
-        const response = await axios.get('http://localhost:5000/api/cars', {
+        const response = await axios.get(`${import.meta.env.VITE_API_BASE_URL}cars`, {
           headers: {
             Authorization: `Bearer ${user.token}`,
           },

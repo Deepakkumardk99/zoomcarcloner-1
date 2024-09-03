@@ -11,7 +11,7 @@ const BookingDetails = () => {
   useEffect(() => {
     const fetchBookingDetails = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/bookings/user', {
+        const response = await axios.get(`${import.meta.env.VITE_API_BASE_URL}bookings/user`, {
           headers: {
             Authorization: `Bearer ${user.token}`,
           },

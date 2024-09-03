@@ -14,7 +14,7 @@ const Register = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post(`${import.meta.env.VITE_API_BASE_URL}/auth/register`, {
+      await axios.post(`${import.meta.env.VITE_API_BASE_URL}auth/register`, {
         name,
         email,
         mobileNo,
