@@ -1,7 +1,7 @@
 import { useContext, useEffect, useState } from 'react';
 import axios from 'axios';
 import { AuthContext } from '../context/AuthContext';
-import { useNavigate } from 'react-router-dom';
+import { json, useNavigate } from 'react-router-dom';
 
 const HomePage = () => {
   const { user } = useContext(AuthContext);
@@ -17,8 +17,9 @@ const HomePage = () => {
   });
   const [error, setError] = useState(null);
   const navigate = useNavigate();
-
+  
   useEffect(() => {
+    
     const fetchCars = async () => {
       try {
         if (!user || !user.token) {
