@@ -10,7 +10,7 @@ const NavBar = () => {
   return (
     
     <nav className='navbar'>
-          <h1>Zoomcar</h1>
+          <h1 onClick={() => navigate('/home')}>Zoomcar</h1>
           
       {user ? (
         <div className='navbar-item'>
@@ -23,7 +23,7 @@ const NavBar = () => {
       </Dropdown.Toggle>
 
       <Dropdown.Menu>
-        <Dropdown.Item  onClick={() => navigate('/bookings/users')}>my booking</Dropdown.Item>
+        <Dropdown.Item  onClick={() => navigate('/bookings/users')}>My Booking</Dropdown.Item>
         <Dropdown.Item onClick={()=>navigate('/admin')}>Admin page</Dropdown.Item>
         
       </Dropdown.Menu>

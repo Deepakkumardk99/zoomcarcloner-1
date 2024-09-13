@@ -26,7 +26,10 @@ const Login = () => {
   };
 
   return (
-    <form className="login" onSubmit={handleSubmit}
+    <div >
+      
+      <form className="login" onSubmit={handleSubmit}
+      
     >
          <h2>Login page</h2>
        <h6>Enter the Email</h6>   
@@ -50,6 +53,8 @@ const Login = () => {
         New here? <a style={{color:'blue'}} onClick={()=>navigate('/register')} >Register</a>
       </p>
     </form>
+
+    </div>
   );
 };
 

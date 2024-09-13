@@ -19,16 +19,16 @@ const HomePage = () => {
   const navigate = useNavigate();
   
   useEffect(() => {
+
+    const auth = JSON.parse(localStorage.getItem('user'))
     
     const fetchCars = async () => {
       try {
-        if (!user || !user.token) {
-          throw new Error('User is not authenticated');
-        }
+        
 
         const response = await axios.get(`${import.meta.env.VITE_API_BASE_URL}cars`, {
           headers: {
-            Authorization: `Bearer ${user.token}`,
+            Authorization: `Bearer ${auth.token}`,
           },
         });
         setCars(response.data);
@@ -42,9 +42,9 @@ const HomePage = () => {
         }
       }
     };
-
+    
     fetchCars();
-  }, [user, navigate]);
+  }, []);
 
   const handleFilterChange = (e) => {
     const { name, value } = e.target;
@@ -94,7 +94,9 @@ const HomePage = () => {
   };
 
   if (error) {
+  
     return <div>Error fetching cars: {error.message}</div>;
+    
   }
 
   return (
@@ -103,8 +105,8 @@ const HomePage = () => {
       <div className="filters">
         <select name="price" onChange={handleFilterChange}>
           <option value="all">Price: All</option>
-          <option value="low">Low to High</option>
-          <option value="high">High to Low</option>
+          <option value="low">$0-$50 </option>
+          <option value="high">$50-High </option>
         </select>
         <select name="rating" onChange={handleFilterChange}>
           <option value="all">Rating: All</option>
@@ -144,6 +146,9 @@ const HomePage = () => {
             <h3>{car.name}</h3>
             <p>Price:${car.price}</p>
             <p>Rating: {car.rating}</p>
+            <p>Seat Type:{car.seatType}</p>
+            <p>Fuel Type:{car.fuelType}</p>
+            <p>Transmission:{car.transmission }</p>
             <button onClick={() => handleBookNow(car)}>Book Now</button>
           </div>
         ))}

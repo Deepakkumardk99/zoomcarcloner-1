@@ -9,6 +9,7 @@ const CarList = ({ cars }) => {
           <h3>{car.name}</h3>
           <p>Price: ${car.price}</p>
           <p>Rating: {car.rating} Stars</p>
+          
           <Link to={`/booking?carId=${car._id}`}>Book Now</Link>
         </div>
       ))}
