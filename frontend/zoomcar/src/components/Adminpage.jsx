@@ -68,7 +68,6 @@ const AdminPage = () => {
 
   return (
     <div className="admin-page">
-      <h1>Admin Page</h1>
 
       <div className="add-car-form">
         <h2>Add a New Car</h2>
@@ -84,9 +83,8 @@ const AdminPage = () => {
       </div>
 
       <div className="car-list">
-        <h2>Manage Cars</h2>
         {cars.map(car => (
-          <div key={car._id} >
+          <div className='car-item' key={car._id} >
             <img src={car.imageUrl} alt={car.name} />
             <h3>{car.name}</h3>
             <p>Car Type: {car.carType}</p>

@@ -1,3 +1,8 @@
+
+
+
+
+
 .navbar{
   display: flex;
   align-items: center;
@@ -13,19 +18,32 @@
   gap: 20px;
 
 }
+.login-page{
+  display:flex;
+  align-items: center;
+  width: 100%;
+  background-color:black;
+}
+.login-page .loginChild {
+  flex-basis: 50%;
+}
+img {
+  width: 100%;
+}
 .login{
-  display: flex;
-  flex-direction: column;
-  outline: auto;
-  border: 1px solid black;
-  align-items:center;
-  background-color: rgb(247, 247, 247);
-  gap: 5px;
-  
-  padding: 10px;
-}.button{
 
+  display:flex;
+  flex-direction:column;
+  justify-content: space-evenly;
+  width:250px;
+  height:250px;
+  color: darkgray;
+  margin: auto;
+}
+.button{
   
+  width:100px;
+  border-radius:5px;
   border: none;
   background-color: rgba(79, 70, 255, 0.904);
   color: white;
@@ -33,67 +51,133 @@
 
 }
 .register{
+  display:flex;
+  background-color: black;
+  width:100%;
+  margin: auto;
+  color: darkgray;
+  padding: 20px;
+  gap: 200px;
+}
+.formdetails{
   display: flex;
   flex-direction: column;
-  outline: auto;
-  border: 1px solid black;
-  align-items:center;
-  background-color: rgb(250, 252, 252);
-  justify-content: center;
-  height: 400px;
-  gap: 10px;;
+  gap:5px;
+  
+}
+
+.register.regchild{
+  flex-basis:50%;
+  
+    
 }
 .home-page{
+  width:100%;
+ background-color: rgb(61, 60, 60);
   display: flex;
-  gap:100px;
-  
-  background-color: rgb(236, 239, 240);
-}
-.filters{
+  gap: 50px;
+  margin:0px;
+
+}.filters{
+  flex-basis: 15%;
   display: flex;
   flex-direction: column;
-  gap: 100px;
-  background-color: lightgray;
-  padding: 20px;
+  gap: 120px;
+  margin:5px;
 }
+
 .car-list{
-  display:flex;
-  flex-direction: row;
-  gap: 20px;
-  
-  padding: 20px;
+  flex-basis:80%;
+  display: flex;
   flex-wrap: wrap;
+  gap: 5px;
+  margin:5px;
   
 }.car-item{
   border: 1px solid black;
-  padding: 20px;
-  background-color: rgb(222, 212, 212);
-  height:400;
-  width:auto;
-}
-.booking-details{
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  background-color: rgb(244, 240, 240);
-  padding: 20px;
+  align-items: center;
+  color: darkgray;
+  border-radius:5px;
+  background-color: black;
   
+}
+.booking-details{
+  width: 100%;
+    background-color: rgb(61, 60, 60);
+    display: flex;
+    flex-direction: column;
+    margin:0px;
+    color: darkgray;
+  
+}.detailschild{
+  flex-basis:100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap:70px;
+    margin:70px;
+    color: darkgray;
+    
 }
 
 .footer{
   width: auto;
   height:auto;
   background-color: rgb(29, 27, 27);
-  margin:0;
+
   padding: 10px;;
 }
 .booking-page{
-  width:auto;
-  padding: 10px;;
-  background-color: rgb(242, 243, 244);
+  width:100%;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(56, 51, 51);
+  flex-basis: 50%;
+}.bookingchild{
+  margin: 10px;;
+  border:1px solid black;
+  color:darkgray;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: darkslategray;
+  gap:5px;
+  
 }
 .confirmation-page{
-    width: auto;
-   padding: 10px;;
-    background-color: rgb(242, 243, 244);
+    width: 100%;
+      display: flex;
+      justify-content: center;
+      background-color: rgb(56, 51, 51);
+      flex-basis: 50%;
+  
+}.confirmchild{
+  margin: 10px;
+    border: 1px solid black;
+    color: darkgray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: darkslategray;
+    gap: 5px;
+}
+
+.admin-page{
+  width:100%;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(56, 51, 51);
+  color: darkgray;
+  gap: 10px;;
+  
+}.add-car-form{
+  flex-basis:20%;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
 }

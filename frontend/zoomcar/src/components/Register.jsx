@@ -30,9 +30,15 @@ const Register = () => {
   };
 
   return (
-    <form  className='register'onSubmit={handleSubmit}>
-      <h2>Register</h2>
-      <input
+
+    <div className='register'>
+      <div className='regchild'>
+          <img src="image.jpg" />
+      </div>
+      <div className='regchild'>
+        <form className='formdetails' onSubmit={handleSubmit}>
+          <h2>Sign Up</h2>
+       <input
         type="text"
         placeholder="Name"
         value={name}
@@ -76,9 +82,14 @@ const Register = () => {
       />
       <button  className='button'type="submit">Register</button>
       <p>
-        Already registered? <a href="/">Login</a>
+        Already registered? <a href="/">Sign in</a>
       </p>
     </form>
+
+      </div>
+      
+    </div>
+    
   );
 };
 

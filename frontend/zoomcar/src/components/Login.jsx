@@ -26,13 +26,14 @@ const Login = () => {
   };
 
   return (
-    <div >
-      
-      <form className="login" onSubmit={handleSubmit}
-      
-    >
-         <h2>Login page</h2>
-       <h6>Enter the Email</h6>   
+    <div className='login-page'>
+      <div className="loginChild">
+        <img src="image.jpg" />
+      </div>
+      <div className="loginChild">
+        <form className="login" onSubmit={handleSubmit}>
+         <h2>Sign in</h2>
+        
       <input
         type="email"
         placeholder="Email"
@@ -40,7 +41,7 @@ const Login = () => {
         onChange={(e) => setEmail(e.target.value)}
         required
           />
-          <h6>Enter the password</h6>
+          
       <input
         type="password"
         placeholder="Password"
@@ -50,9 +51,12 @@ const Login = () => {
       />
       <button  className='button'type="submit">Login</button>
       <p >
-        New here? <a style={{color:'blue'}} onClick={()=>navigate('/register')} >Register</a>
+        New here? <a style={{color:'blue'}} onClick={()=>navigate('/register')} >Sign Up</a>
       </p>
     </form>
+      </div>
+      
+      
 
     </div>
   );

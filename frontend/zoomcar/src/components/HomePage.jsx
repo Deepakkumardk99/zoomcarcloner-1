@@ -94,7 +94,7 @@ const HomePage = () => {
   };
 
   if (error) {
-  
+    navigate('/')
     return <div>Error fetching cars: {error.message}</div>;
     
   }

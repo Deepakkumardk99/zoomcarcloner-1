@@ -52,21 +52,22 @@ const BookingPage = () => {
 
   return (
     <div className="booking-page">
+      <div className='bookingchild'>
+
       <h1>Book {car.name}</h1>
       <img src={car.imageUrl} alt={car.name} />
       <p>Price per day: ${car.price}</p>
-      <p>Rating: {car.rating}</p>
       <label>
-        Start Date:
-        <input
+        Start Date:  
+         <input
           type="date"
           value={startDate}
           min={today} // Prevent selecting past dates
           onChange={handleStartDateChange}
         />
-      </label>
+      </label> <br/>
       <label>
-        End Date:
+        End Date:  
         <input
           type="date"
           value={endDate}
@@ -81,6 +82,8 @@ const BookingPage = () => {
       >
         Proceed to Confirmation
       </button>
+
+      </div>
     </div>
   );
 };

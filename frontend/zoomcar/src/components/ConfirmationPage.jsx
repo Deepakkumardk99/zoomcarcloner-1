@@ -31,28 +31,26 @@ const ConfirmationPage = () => {
     } catch (error) {
       console.error('Failed to save booking', error);
       alert('please login first')
+      
     }
   };
 
   if (!car) {
+    navigate('/');
     return <div>No booking details available</div>;
   }
 
   return (
     <div className="confirmation-page">
-      <h1>Booking Confirmation</h1>
-      <div className="confirmation-details">
-        <div className="car-details">
+      <div className='confirmchild'>
+        <h1>Booking Confirmation</h1>
           <img src={car.imageUrl} alt={car.name} />
           <h3>{car.name}</h3>
           <p>Price per day: ${car.price}</p>
           <p>Rating: {car.rating}</p>
-        </div>
-        <div className="booking-summary">
           <p><strong>Start Date:</strong> {startDate}</p>
           <p><strong>End Date:</strong> {endDate}</p>
           <p><strong>Total Price:</strong> ${totalPrice}</p>
-        </div>
         <button onClick={handleSaveBooking}> pay now </button>
       </div>
     </div>

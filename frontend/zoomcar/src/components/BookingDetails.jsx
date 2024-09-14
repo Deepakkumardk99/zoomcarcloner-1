@@ -32,24 +32,27 @@ const BookingDetails = () => {
   }
 
   return (
+        
     <div className="booking-details">
-      <h1>My Bookings</h1>
+      <div>
+        <h2>My booking</h2>
+        </div>
+      <div className='detailschild'>
       {bookings.map((booking) => (
-        <div key={booking._id} className="booking-item">
-         
+        <div className="car-item" key={booking._id} >
             <img src={booking.car.imageUrl} alt={booking.car.name} />
             <h3>{booking.car.name}</h3>
             <p>Price per day: ${booking.car.price}</p>
             <p>Rating: {booking.car.rating}</p>
-          
-          
             <p><strong>Start Date:</strong> {new Date(booking.startDate).toLocaleDateString()}</p>
             <p><strong>End Date:</strong> {new Date(booking.endDate).toLocaleDateString()}</p>
             <p><strong>Total Price:</strong> ${booking.totalPrice}</p>
-          <hr />
+        
         </div>
       ))}
-      <button onClick={() => navigate('/home')}>Back to Home</button>
+      </div>
+      
+     
     </div>
   );
 };
